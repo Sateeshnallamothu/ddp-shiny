@@ -17,7 +17,7 @@ shinyUI(fluidPage(
   tags$h3("Interactive location information using Google geocode service."),
   h5("Help text"),
   helpText("Enter any location name such as address, city, state, postal code, place, landmark, country etc. ", 
-           "to zoom the map and mark the location. Click the marker for more details. Use +/- for further zoom. ",
+           "to zoom the map appropriately and mark the location. Click the marker for more details. Use +/- for further zoom. ",
            "Clear All button will reset the map to star over. "),
   leafletOutput("map"),
   absolutePanel(top = 135, right = 10,

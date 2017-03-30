@@ -8,6 +8,11 @@
 #
 
 library(shiny)
+
+## "Enter any location name such as address, city, state, postal code, place, landmark, country etc. ", 
+## "to zoom the map appropriately and mark the location. Click the marker for more details. Use +/- for further zoom. ",
+## "Clear All button will reset the map to star over. "
+
 setLoc<-function(addr){
   if (addr==""){
     return(data.frame(lat=0, long=0, accuracy=NA, formatted_address=NA, address_type=NA, status=NA,
